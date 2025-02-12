@@ -1,24 +1,24 @@
-import { getPosts } from '../services/api.ts';
-import { useQuery } from '@tanstack/react-query';
-import React from 'react';
+import React from "react"
+import { useGetPosts } from "../hooks/useGetPost.ts"
+import Loader from "./Loader/Loader.tsx"
+import Error from "./Error/Error.tsx"
 
 const Post = () => {
-  // use the tanstack query to get the posts data 
+  // use the tanstack query to get the posts data
 
-  const {data, isPending, error} = useQuery({
-    queryKey: ['posts'],
-    queryFn: getPosts
-  })
+  const { data, isPending, error } = useGetPosts()
 
-  if(error) {
-    return <div>Error: {error}</div>
+  console.log(data)
+
+  if (error) {
+    return <Error message={error.message} />
   }
 
-  console.log(data);
-  
-  return (
-    <div>Post</div>
-  )
+  if (isPending) {
+    return <Loader />
+  }
+
+  return <div>Post</div>
 }
 
-export default Post;
+export default Post
