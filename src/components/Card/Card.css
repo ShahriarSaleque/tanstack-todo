@@ -20,3 +20,34 @@
     font-size: 0.875rem;
     color: #555;
   }
+
+  .edit {
+    cursor: pointer;
+    background-color: #10b981;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 2px;
+    border: 1px solid #059669;
+    transition: background-color 0.3s;
+    outline: none !important;
+  }
+
+  .delete {
+    cursor: pointer;
+    background-color: red;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 2px;
+    border: 1px solid red;
+    transition: background-color 0.3s;
+    outline: none !important;
+    margin-left: 10px;
+  }
+
+  .edit:hover {
+    background-color: #059669;
+  }
+
+  .delete:hover {
+    background-color: red;
+  }
