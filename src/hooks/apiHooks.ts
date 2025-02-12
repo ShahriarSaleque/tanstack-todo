@@ -17,10 +17,11 @@ export const useCreatePost = () => {
     return useMutation({
         mutationFn: createPost,
         // use invalidate queries to refetch the data after creating a new post
-        // onSuccess: () => {
-        //     queryClient.invalidateQueries({ queryKey: [queryKey] });
+        onSuccess: () => {
+            queryClient.invalidateQueries({ queryKey: [queryKey] });
 
-        // }
+        }
+        
         // use useQueryData to locally update and refresh the cache / hence not triggering a network call 
         // onSuccess: (newPost: PostObj) => {
         //     queryClient.setQueryData([queryKey], (oldData: any) => {
