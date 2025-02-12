@@ -1,5 +1,5 @@
 import React from "react"
-import { useGetPosts } from "../hooks/useGetPost.ts"
+import { useGetPosts } from "../hooks/apiHooks.ts"
 import Loader from "./Loader/Loader.tsx"
 import Error from "./Error/Error.tsx"
 import Card from "./Card/Card.tsx"
