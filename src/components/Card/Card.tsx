@@ -4,10 +4,11 @@ import "./Card.css"
 const Card = ({ userId, id, title, body }: CardProps) => {
   return (
     <div className="card">
+      <h1>Card - {id}</h1>
       <h2 className="card-title">{title}</h2>
       <p className="card-body">{body}</p>
       <p className="card-footer">
-        User ID: {userId} | Post ID: {id}
+        User ID: {userId}
       </p>
     </div>
   )
