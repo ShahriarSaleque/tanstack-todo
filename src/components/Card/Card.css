@@ -1,53 +1,53 @@
 .card {
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    padding: 16px;
-    margin: 16px 0;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  }
-  
-  .card-title {
-    font-size: 1.25rem;
-    margin-bottom: 8px;
-  }
-  
-  .card-body {
-    font-size: 1rem;
-    margin-bottom: 8px;
-  }
-  
-  .card-footer {
-    font-size: 0.875rem;
-    color: #555;
-  }
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 16px;
+  margin: 16px 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
 
-  .edit {
-    cursor: pointer;
-    background-color: #10b981;
-    color: white;
-    padding: 8px 16px;
-    border-radius: 2px;
-    border: 1px solid #059669;
-    transition: background-color 0.3s;
-    outline: none !important;
-  }
+.card-title {
+  font-size: 1.25rem;
+  margin-bottom: 8px;
+}
 
-  .delete {
-    cursor: pointer;
-    background-color: red;
-    color: white;
-    padding: 8px 16px;
-    border-radius: 2px;
-    border: 1px solid red;
-    transition: background-color 0.3s;
-    outline: none !important;
-    margin-left: 10px;
-  }
+.card-body {
+  font-size: 1rem;
+  margin-bottom: 8px;
+}
 
-  .edit:hover {
-    background-color: #059669;
-  }
+.card-footer {
+  font-size: 0.875rem;
+  color: #555;
+}
 
-  .delete:hover {
-    background-color: red;
-  }
+.edit {
+  cursor: pointer;
+  background-color: #10b981;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 2px;
+  border: 1px solid #059669;
+  transition: background-color 0.3s;
+  outline: none !important;
+}
+
+.delete {
+  cursor: pointer;
+  background-color: red;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 2px;
+  border: 1px solid red;
+  transition: background-color 0.3s;
+  outline: none !important;
+  margin-left: 10px;
+}
+
+.edit:hover {
+  background-color: #059669;
+}
+
+.delete:hover {
+  background-color: red;
+}

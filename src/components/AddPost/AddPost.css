@@ -1,27 +1,27 @@
 .input {
-    border: 1px solid #ddd;
-    padding: 8px;
-    border-radius: 4px;
-    width: 200px;
-    outline: none;
-  }
-  
-  .input:focus {
-    outline: 2px solid #059669;
-  }
-  
-  .button {
-    cursor: pointer;
-    background-color: #10b981;
-    color: white;
-    padding: 8px 16px;
-    border-radius: 2px;
-    border: 1px solid #059669;
-    transition: background-color 0.3s;
-    outline: none !important;
-    margin-left: 10px;
-  }
-  
-  .button:hover {
-    background-color: #059669;
-  }
+  border: 1px solid #ddd;
+  padding: 8px;
+  border-radius: 4px;
+  width: 200px;
+  outline: none;
+}
+
+.input:focus {
+  outline: 2px solid #059669;
+}
+
+.button {
+  cursor: pointer;
+  background-color: #10b981;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 2px;
+  border: 1px solid #059669;
+  transition: background-color 0.3s;
+  outline: none !important;
+  margin-left: 10px;
+}
+
+.button:hover {
+  background-color: #059669;
+}
