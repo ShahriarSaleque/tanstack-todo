@@ -1,5 +1,9 @@
 import React from 'react';
-import { useGetPosts } from '../hooks/apiHooks.ts';
+import {
+  useDeletePost,
+  useGetPosts,
+  useUpdatePost,
+} from '../hooks/apiHooks.ts';
 import Loader from './Loader/Loader.tsx';
 import Error from './Error/Error.tsx';
 import Card from './Card/Card.tsx';
@@ -8,15 +12,19 @@ import { deletePost } from '../services/api.ts';
 
 const Post = () => {
   // use the tanstack query to get the posts data
-
   const { data, isPending, error } = useGetPosts();
 
-  const updatePostHandler = () => {
-    console.log('update');
+  // bring in the deletePost mutation and updatePost mutation
+  const updatePostMutation = useUpdatePost();
+  const deletePostMutation = useDeletePost();
+
+  const updatePostHandler = (postObj) => {
+    const updatedTitle = prompt('Enter new title', postObj.title);
+    updatePostMutation.mutate({ ...postObj, title: updatedTitle });
   };
 
-  const deletePostHandler = () => {
-    console.log('delete');
+  const deletePostHandler = (id: number) => {
+    deletePostMutation.mutate(id);
   };
 
   console.log(data);
